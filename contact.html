@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Formulario, Contato, HTML5">
+	<meta description="Fomulário de contato.">
+	<title>Formulário de contato</title>
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
+</head>
+<body>
+    <form method="post" action="" id="contato" name="contato">
+        <label for="pnome">*Primeiro nome</label>
+        <input type="text" id="pnome" name="pnome" placeholder="Digite seu primeiro nome" required>
+        <label for="unome">Último nome</label>
+        <input type="text" id="unome" name="unome" placeholder="Digite seu segundo nome">
+        <label for="email">*Email</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
+        <label for="pais">País</label>
+        <select id="pais" name="pais">
+            <option selected hidden></option>
+            <option value="australia">Brasil</option>
+            <option value="canada">Argentina</option>
+            <option value="usa">Chile</option>
+        </select>
+        <label for="mensagem">*Mensagem</label>
+        <textarea id="mensagem" name="mensagem" placeholder="Digite alguma coisa..." style="height:200px" required></textarea>
+        <p>(*) Campos obrigatórios.</p>
+        <button id="submit" type="submit">Enviar</button>
+    </form>
+</body>
+</html>
