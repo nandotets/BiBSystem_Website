@@ -8,6 +8,18 @@
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
 </head>
 <body>
+	<header>
+		<img id="logo" src="images/BiBSystemHeader.png" alt="BiBSystemHeader.png" >
+	</header>
+	<nav>
+		<a href="index.html">Início</a>
+		<a href="">Notícias</a>
+		<a href="">Fórum</a>
+		<a href="contact.html">Contato</a>
+		<a href="">Sobre</a>
+		<a href="login.html" class="sign">Entrar</a>
+		<a href="signup.html" class="sign">Cadastrar-se</a>
+	</nav>
     <form method="post" action="" autocomplete="on" id="formulario" name="formulario">
  	<div class="container">
     	<h1>Perfil 1</h1>
@@ -67,18 +79,20 @@
     		<input type="text" placeholder="De 4 a 16 caracteres" name="usuario" id="usuario" min="4" max="16" required value="usuario1" disabled> 
    			<label for="psw"><strong>*Senha</strong></label>
     		<input type="password" placeholder="6 caracteres numericos" name="psw" pattern="[0-9]{6}" required value="123456" disabled>
-      </fieldset>
+    	</fieldset>
 		<p>(*) Campos obrigatórios</p>
-    <label>
-        <input type="checkbox" name="terms" style="margin-bottom:15px" required>
-        Eu aceito os <a href="#" style="color:dodgerblue">Termos e Privacidade</a> ao editar a conta.
-    </label>
-    <div class="clearfix">
-      <button type="button" class="cancelbtn">Cancelar</button>
-      <button type="submit" class="signupbtn">Salvar</button>
-    </div>
-  </div>
-</form>
-    
+		<label>
+			<input type="checkbox" name="terms" style="margin-bottom:15px" required>
+			Eu aceito os <a href="#" style="color:dodgerblue">Termos e Privacidade</a> ao editar a conta.
+		</label>
+		<div class="clearfix">
+		  <button type="button" class="cancelbtn">Cancelar</button>
+		  <button type="submit" class="signupbtn">Salvar</button>
+		</div>
+	  </div>
+	</form>
+    <footer>
+		<p>&copy;Copyright 2018 <a target="_blank" href="index.html">BiBSystem</a>. All rights reserved.</p>
+	</footer>
 </body>
 </html>

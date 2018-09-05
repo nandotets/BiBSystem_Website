@@ -8,76 +8,93 @@
 	<link rel="stylesheet" type="text/css" href="css/signup.css">
 </head>
 <body>
-<form method="post" action="" autocomplete="on" id="formulario" name="formulario">
-  <div class="container">
-    	<h1>Registrar-se</h1>
-    	<p> Preencha os campos para criar uma conta.</p>
-    	<hr>
-    	<fieldset>
-        	<legend>Informações pessoais</legend>
+	<header>
+		<img id="logo" src="images/BiBSystemHeader.png" alt="BiBSystemHeader.png" >
+	</header>
+	<nav>
+		<a href="index.html">Início</a>
+		<a href="">Notícias</a>
+		<a href="">Fórum</a>
+		<a href="contact.html">Contato</a>
+		<a href="">Sobre</a>
+		<a href="login.html" class="sign">Entrar</a>
+		<a href="signup.html" class="sign">Cadastrar-se</a>
+	</nav>
+	<form method="post" action="" autocomplete="on" id="formulario" name="formulario">
+	  <div class="container">
+			<h1>Registrar-se</h1>
+			<p> Preencha os campos para criar uma conta.</p>
+			<hr>
+			<fieldset>
+				<legend>Informações pessoais</legend>
+				<br>
+				<label for="cpf"><strong>*CPF</strong></label>
+					<input type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}" name="cpf" id="cpf" required>
+				<label for="gender"><strong>Gênero</strong></label>
+					<input type="radio" id="male" name="gender" value="Masculino">
+				<label for="male">Masculino</label>
+					<input type="radio" id="female" name="gender" value="Feminino">
+				<label for="female">Feminino</label>
+				<br><br>
+				<label for="datebirth"><strong>Data de nascimento</strong></label>
+					<input type="date" name="datebirth" id="datebirth">
+				<label for="fnome"><strong>*Primeiro nome</strong></label>
+					<input type="text" placeholder="Digite o primeiro nome" name="fnome" id="fnome" required>
+				<label for="lnome"><strong>Último nome</strong></label>
+					<input type="text" placeholder="Digite o último nome" name="lnome" id="lnome">
+				<label for="email"><strong>*Email</strong></label>
+					<input type="email" placeholder="Digite o email" name="email" id="email" required>
+				<label for="tel"><strong>Telefone</strong></label>
+					<input type="tel" id="tel" name="tel" placeholder="(xx)xxxxxxxxx" pattern="\([0-9]{2}\)[0-9]{9}">
+			</fieldset>
 			<br>
-  			<label for="cpf"><strong>*CPF</strong></label>
-  				<input type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}" name="cpf" id="cpf" required>
-  			<label for="gender"><strong>Gênero</strong></label>
-        		<input type="radio" id="male" name="gender" value="Masculino">
-        	<label for="male">Masculino</label>
-				<input type="radio" id="female" name="gender" value="Feminino">
-			<label for="female">Feminino</label>
-    		<br><br>
-			<label for="datebirth"><strong>Data de nascimento</strong></label>
-				<input type="date" name="datebirth" id="datebirth">
-			<label for="fnome"><strong>*Primeiro nome</strong></label>
-				<input type="text" placeholder="Digite o primeiro nome" name="fnome" id="fnome" required>
-			<label for="lnome"><strong>Último nome</strong></label>
-				<input type="text" placeholder="Digite o último nome" name="lnome" id="lnome">
-			<label for="email"><strong>*Email</strong></label>
-				<input type="email" placeholder="Digite o email" name="email" id="email" required>
-			<label for="tel"><strong>Telefone</strong></label>
-				<input type="tel" id="tel" name="tel" placeholder="(xx)xxxxxxxxx" pattern="\([0-9]{2}\)[0-9]{9}">
-		</fieldset>
-		<br>
-		<fieldset>
-			<legend>Endereço</legend>
+			<fieldset>
+				<legend>Endereço</legend>
+				<br>
+				<label for="rua"><strong>Rua</strong></label>
+					<input type="text" placeholder="Digite o nome da rua" name="rua" id="rua">
+				<label for="numero"><strong>Numero</strong></label>
+					<input type="number" class="numero" name="numero" id="numero" min="0">
+				<label for="comp"><strong>Complemento</strong></label>
+					<input type="text" name="comp" id="comp" placeholder="Digite o complemento (se necessário)">
+				<label for="bairro"><strong>Bairro</strong></label>
+					<input type="text" placeholder="Digite o nome do bairro" name="bairro" id="bairro">
+				<label for="cidade"><strong>Cidade</strong></label>
+					<input type="text" placeholder="Digite o nome da cidade" name="cidade" id="cidade">
+				<label for="uf"><strong>UF</strong></label>
+					<select id="uf" name="uf" class="selects">
+						<option selected disabled hidden></option>
+						<option>MG</option>
+						<option>PR</option>
+						<option>SP</option>
+						<option>Outro</option>
+					</select>
+			</fieldset>
 			<br>
-			<label for="rua"><strong>Rua</strong></label>
-				<input type="text" placeholder="Digite o nome da rua" name="rua" id="rua">
-			<label for="numero"><strong>Numero</strong></label>
-				<input type="number" class="numero" name="numero" id="numero" min="0">
-			<label for="comp"><strong>Complemento</strong></label>
-				<input type="text" name="comp" id="comp" placeholder="Digite o complemento (se necessário)">
-			<label for="bairro"><strong>Bairro</strong></label>
-				<input type="text" placeholder="Digite o nome do bairro" name="bairro" id="bairro">
-			<label for="cidade"><strong>Cidade</strong></label>
-				<input type="text" placeholder="Digite o nome da cidade" name="cidade" id="cidade">
-			<label for="uf"><strong>UF</strong></label>
-				<select id="uf" name="uf" class="selects">
-					<option selected disabled hidden></option>
-					<option>MG</option>
-					<option>PR</option>
-					<option>SP</option>
-					<option>Outro</option>
-				</select>
-		</fieldset>
-		<br>
-  		<fieldset>
-        	<legend>Acesso</legend>
-    		<label for="usuario"><strong>*Usuário</strong></label>
-    		<input type="text" placeholder="De 4 a 16 caracteres" name="usuario" id="usuario" min="4" max="16" required> 
-   			<label for="psw"><strong>*Senha</strong></label>
-    		<input type="password" placeholder="6 caracteres numericos" name="psw" pattern="[0-9]{6}" required>
-    		<label for="psw-repeat"><strong>*Repetir senha</strong></label>
-    		<input type="password" placeholder="Digite a senha novamente" name="psw-repeat" required>
-      </fieldset>
-		<p>(*) Campos obrigatórios</p>
-    	<label>
-			<input type="checkbox" name="terms" style="margin-bottom:15px" required>
-			Eu aceito os <a href="#" style="color:dodgerblue">Termos e Privacidade</a> ao criar a conta.
-    	</label>
-    	<div class="clearfix">
-      		<button type="button" class="cancelbtn">Cancelar</button>
-      		<button type="submit" class="signupbtn">Registrar-se</button>
-    	</div>
-  </div>
-</form>
+			<fieldset>
+				<legend>Acesso</legend>
+				<label for="usuario"><strong>*Usuário</strong></label>
+				<input type="text" placeholder="De 4 a 16 caracteres" name="usuario" id="usuario" min="4" max="16" required> 
+				<label for="psw"><strong>*Senha</strong></label>
+				<input type="password" placeholder="6 caracteres numericos" name="psw" pattern="[0-9]{6}" required>
+				<label for="psw-repeat"><strong>*Repetir senha</strong></label>
+				<input type="password" placeholder="Digite a senha novamente" name="psw-repeat" required>
+		  </fieldset>
+			<p>(*) Campos obrigatórios</p>
+			<label>
+				<input type="checkbox" name="terms" style="margin-bottom:15px" required>
+				Eu aceito os <a href="#" style="color:dodgerblue">Termos e Privacidade</a> ao criar a conta.
+			</label>
+			<div class="clearfix">
+				<button type="button" class="cancelbtn">Cancelar</button>
+				<button type="submit" class="signupbtn">Registrar-se</button>
+			</div>
+	  </div>
+	</form>
+	<footer>
+		<p id="footerCopyrights">
+			&copy;Copyright 2018 <a target="_blank" href="index.html">BiBSystem</a>. All rights reserved.
+		</p>
+	</footer>
 </body>
 </html>

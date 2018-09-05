@@ -1,6 +1,49 @@
 @charset "utf-8";
 /* CSS Document */
 
+header {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+#logo {
+	max-width: 800px;
+	max-height: 200px;
+	position: static;
+}
+
+nav {
+	display: block;
+	overflow: hidden; /* Hide overflow */
+    background-color: #25517e; /* Dark background color */
+}
+
+nav a {
+	float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+nav .sign{
+	float: right;
+}
+
+nav a:hover{
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+
+footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+
 * {box-sizing: border-box}
 
   input[type=text], input[type=email], input[type=password], input[type=date], input[type=number], input[type=tel] {
@@ -12,7 +55,7 @@
   background: #f1f1f1;
 }
 
-  .selects {
+ .selects {
   width: 100%;
   padding: 15px;
   margin: 5px 0 22px 0;
