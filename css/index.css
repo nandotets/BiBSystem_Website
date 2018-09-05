@@ -1,0 +1,21 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+    background-color: #F1F1F1;
+    text-align: left;
+    padding: 10px;
+}
+
+#logo {
+	max-width: 800px;
+	max-height: 200px;
+	position: static;
+	
+}
+
+footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
