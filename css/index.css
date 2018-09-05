@@ -3,7 +3,7 @@
 
 header {
     background-color: #F1F1F1;
-    text-align: left;
+    text-align: center;
     padding: 10px;
 }
 
@@ -11,7 +11,56 @@ header {
 	max-width: 800px;
 	max-height: 200px;
 	position: static;
-	
+}
+
+nav {
+	display: block;
+	overflow: hidden; /* Hide overflow */
+    background-color: #25517e; /* Dark background color */
+}
+
+nav a {
+	float: left; /* Make sure that the links stay side-by-side */
+    display: block; /* Change the display to block, for responsive reasons (see below) */
+    color: white; /* White text color */
+    text-align: center; /* Center the text */
+    padding: 14px 20px; /* Add some padding */
+    text-decoration: none; /* Remove underline */
+}
+
+nav .sign{
+	float: right;
+}
+
+nav a:hover{
+    background-color: #ddd; /* Grey background color */
+    color: black; /* Black text color */
+}
+
+.container {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+aside {
+	float: left;
+	display: block;
+    background-color: #f1f1f1;
+    padding: 20px;
+	flex: 1px;
+	-ms-flex: 1px; /* IE10 */
+}
+
+main {   
+	display: block;
+	float: right;
+    background-color: white;
+    padding: 20px;
+	flex: 50%;
+	-ms-flex: 50%; /* IE10 */
+
 }
 
 footer {
