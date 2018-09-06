@@ -1,0 +1,51 @@
+@charset "utf-8";
+/* CSS Document */
+
+header {
+    background-color: #F1F1F1;
+    text-align: left;
+    padding: 10px;
+}
+
+#logo {
+	max-width: 800px;
+	max-height: 200px;
+	position: static;
+}
+
+.container {  
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+}
+
+aside {
+	float: left;
+	display: block;
+    background-color: #f1f1f1;
+    padding: 20px;
+	flex: 1px;
+	-ms-flex: 1px; /* IE10 */
+}
+
+main {   
+	display: block;
+	float: right;
+    background-color: white;
+    padding: 20px;
+	flex: 50%;
+	-ms-flex: 50%; /* IE10 */
+
+}
+
+footer {
+    background-color: #F1F1F1;
+    text-align: center;
+    padding: 10px;
+}
+
+body {
+    border-radius: 5px;
+    padding: 20px;
+}
