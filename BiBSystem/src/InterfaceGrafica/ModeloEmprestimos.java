@@ -42,7 +42,7 @@ public abstract class ModeloEmprestimos extends javax.swing.JInternalFrame imple
         bSalvar = new javax.swing.JButton();
         bSair = new javax.swing.JButton();
 
-        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icone.png"))); // NOI18N
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon2.png"))); // NOI18N
 
         bLimpar.setFont(new java.awt.Font("Arial", 1, 18)); // NOI18N
         bLimpar.setForeground(new java.awt.Color(51, 102, 255));

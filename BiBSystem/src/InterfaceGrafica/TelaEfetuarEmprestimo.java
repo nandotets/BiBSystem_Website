@@ -121,7 +121,7 @@ public class TelaEfetuarEmprestimo extends ModeloEmprestimos {
         setResizable(true);
         setTitle("Efetuar empréstimo");
         setToolTipText("");
-        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icone.png"))); // NOI18N
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon2.png"))); // NOI18N
 
         jPanel1.setToolTipText("");
 

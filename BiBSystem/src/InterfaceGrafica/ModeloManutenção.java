@@ -56,7 +56,7 @@ public abstract class ModeloManutenção extends javax.swing.JInternalFrame impl
         bSair = new javax.swing.JButton();
         bExcluir = new javax.swing.JButton();
 
-        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icone.png"))); // NOI18N
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon2.png"))); // NOI18N
 
         cbPesquisa.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbPesquisa.setMaximumSize(new java.awt.Dimension(56, 20));

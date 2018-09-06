@@ -69,6 +69,7 @@ public class TelaManutençãoAssociado extends ModeloManutenção {
 
         setResizable(true);
         setTitle("Manutenção de associados");
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon2.png"))); // NOI18N
 
         tabelaAssociados.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

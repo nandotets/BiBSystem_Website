@@ -5,7 +5,7 @@
     <Property name="title" type="java.lang.String" value="Pagamento de multa"/>
     <Property name="toolTipText" type="java.lang.String" value=""/>
     <Property name="frameIcon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-      <Image iconType="3" name="/Imagens/icone.png"/>
+      <Image iconType="3" name="/Imagens/icon2.png"/>
     </Property>
   </Properties>
   <SyntheticProperties>

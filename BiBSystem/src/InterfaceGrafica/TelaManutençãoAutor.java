@@ -68,6 +68,7 @@ public class TelaManutençãoAutor extends ModeloManutenção {
         tabelaAutores = new javax.swing.JTable();
 
         setTitle("Manutenção de autores");
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon2.png"))); // NOI18N
 
         tabelaAutores.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

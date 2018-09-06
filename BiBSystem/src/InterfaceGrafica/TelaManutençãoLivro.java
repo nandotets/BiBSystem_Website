@@ -69,6 +69,7 @@ public class TelaManutençãoLivro extends ModeloManutenção {
 
         setResizable(true);
         setTitle("Manutenção de livros");
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon2.png"))); // NOI18N
 
         tabelaLivros.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {

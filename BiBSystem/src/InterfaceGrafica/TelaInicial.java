@@ -23,7 +23,7 @@ public class TelaInicial extends javax.swing.JFrame {
         initComponents();
         setLocation(250, 0);
         setSize(900, 700);
-        ImageIcon icone = new ImageIcon("src/Imagens/icone.png");
+        ImageIcon icone = new ImageIcon("src/Imagens/icon2.png");
         setIconImage(icone.getImage());
     }
 
@@ -65,7 +65,8 @@ public class TelaInicial extends javax.swing.JFrame {
         Desktop.setMaximumSize(new java.awt.Dimension(900, 600));
         Desktop.setPreferredSize(new java.awt.Dimension(900, 600));
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/wallpaperStart.jpg"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/sdasd.png"))); // NOI18N
+        jLabel1.setDisabledIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon2.png"))); // NOI18N
 
         Desktop.setLayer(jLabel1, javax.swing.JLayeredPane.DEFAULT_LAYER);
 
@@ -79,9 +80,7 @@ public class TelaInicial extends javax.swing.JFrame {
         );
         DesktopLayout.setVerticalGroup(
             DesktopLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(DesktopLayout.createSequentialGroup()
-                .addComponent(jLabel1)
-                .addGap(0, 31, Short.MAX_VALUE))
+            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 600, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         jMenu1.setText("Empréstimo");
@@ -205,7 +204,7 @@ public class TelaInicial extends javax.swing.JFrame {
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(Desktop, javax.swing.GroupLayout.DEFAULT_SIZE, 681, Short.MAX_VALUE)
+            .addComponent(Desktop, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
 
         pack();

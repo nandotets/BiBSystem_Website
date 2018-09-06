@@ -68,6 +68,7 @@ public class TelaManutençãoEditora extends ModeloManutenção {
         tabelaEditoras = new javax.swing.JTable();
 
         setTitle("Manutenção de editoras");
+        setFrameIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagens/icon2.png"))); // NOI18N
 
         tabelaEditoras.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
