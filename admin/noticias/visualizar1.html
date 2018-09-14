@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Biblioteca, Sistema, HTML5">
+	<meta name="description" content="BiBSystem é um sistema implementado em JAVA destinado ao controle de acervo e empréstimos de uma biblioteca. Possui como prioridade uma boa aparência e facilitar a navegação do usuário.">
+	<title>BiBSystem - Visualizar Versão 1.1</title>
+	<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../css/indexAdmin.css">
+</head>
+<body>
+	<div class="container">
+	<aside>
+		<img id="logo" src="../../images/BiBSystem.png" alt="BiBSystemHeader.png" >
+		<h2>DASHBOARD</h2>
+		<nav>
+			<ul>
+				<li><h3>Notícias</h3>
+					<ul>
+						<li><a href="cadastrar.html">Cadastrar</a></li>
+						<li><a href="visualizar.html">Visualizar</a></li>
+						<li><a href="editar.html">Editar</a></li>
+						<li><a href="deletar.html">Deletar</a></li>
+					</ul>
+				</li>
+				<li><h3>Usuários</h3>
+					<ul>
+						<li><a href="../usuarios/visualizar.html">Visualizar</a></li>
+						<li><a href="../usuarios/editar.html">Editar</a></li>
+						<li><a href="../usuarios/deletar.html">Deletar</a></li>
+					</ul>
+				</li>
+				<li><h3>Sobre</h3>
+					<ul>
+						<li><a href="../sobre/editar.html">Editar</a></li>
+					</ul>
+				</li>
+				<li><h3><a href="../../index.html">Sair</a></h3></li>
+			</ul>
+		</nav>		
+		</aside>
+		<main>
+			<form method="post" action="#" autocomplete="on" id="formulario" name="formulario">
+				<h1>VISUALIZAR VERSÃO 1.0</h1>
+				<hr>
+				<div class="container">
+					<fieldset>
+					<legend>Notícia</legend>
+					<br>
+					<label for="titulo"><strong>Título</strong></label><br>
+						<input type="text" placeholder="Título." name="titulo" id="titulo" value="Versão 1.0" disabled>
+					<label for="corpo"><strong>Corpo</strong></label><br>
+						<textarea rows="4" cols="100" maxlength="800" placeholder="Corpo da notícia." name="corpo" id="corpo" disabled>Implementado versão alfa.</textarea>
+					</fieldset>
+					<div class="buttons">
+					    <button type="button" class="cancelbtn">Voltar</button>
+					</div>
+				</div>
+			</form>
+		</main>
+	</div>
+	<footer>
+		<p id="footerCopyrights">
+			&copy;Copyright 2018 <a target="_blank" href="../../index.html">BiBSystem</a>. All rights reserved.
+		</p>
+	</footer>
+</body>
+</html>

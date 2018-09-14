@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+	<meta charset="UTF-8">
+	<meta name="keywords" content="Biblioteca, Sistema, HTML5">
+	<meta name="description" content="BiBSystem é um sistema implementado em JAVA destinado ao controle de acervo e empréstimos de uma biblioteca. Possui como prioridade uma boa aparência e facilitar a navegação do usuário.">
+	<title>BiBSystem - Visualizar Perfil 1</title>
+	<link rel="icon" href="../../favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../../css/indexAdmin.css">
+</head>
+<body>
+	<div class="container">
+	<aside>
+		<img id="logo" src="../../images/BiBSystem.png" alt="BiBSystemHeader.png" >
+		<h2>DASHBOARD</h2>
+		<nav>
+			<ul>
+				<li><h3>Notícias</h3>
+					<ul>
+						<li><a href="../noticias/cadastrar.html">Cadastrar</a></li>
+						<li><a href="../noticias/visualizar.html">Visualizar</a></li>
+						<li><a href="../noticias/editar.html">Editar</a></li>
+						<li><a href="../noticias/deletar.html">Deletar</a></li>
+					</ul>
+				</li>
+				<li><h3>Usuários</h3>
+					<ul>
+						<li><a href="visualizar.html">Visualizar</a></li>
+						<li><a href="editar.html">Editar</a></li>
+						<li><a href="deletar.html">Deletar</a></li>
+					</ul>
+				</li>
+				<li><h3>Sobre</h3>
+					<ul>
+						<li><a href="../sobre/editar.html">Editar</a></li>
+					</ul>
+				</li>
+				<li><h3><a href="../../index.html">Sair</a></h3></li>
+			</ul>
+		</nav>		
+		</aside>
+		<main>
+			<form method="post" action="#" autocomplete="on" id="formulario" name="formulario">
+				<h1>Visualizando Perfil 1</h1>
+				<hr>
+ 				<div class="container">
+    				<fieldset>
+						<legend>Informações pessoais</legend>
+						<br>
+						<label for="cpf"><strong>*CPF</strong></label>
+							<input type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}" name="cpf" id="cpf" value="123.456.789-00" required  disabled>
+						<strong>Gênero</strong>
+							<input type="radio" id="male" name="gender" value="Masculino" checked="checked" disabled>
+						<label for="male">Masculino</label>
+							<input type="radio" id="female" name="gender" value="Feminino" disabled>
+						<label for="female">Feminino</label>
+							<input type="radio" id="unknown" name="gender" value="Desconhecido" disabled>
+						<label for="unknown">Prefiro não dizer</label>
+						<br><br>
+						<label for="datebirth"><strong>Data de nascimento</strong></label>
+							<input type="date" name="datebirth" id="datebirth" value="1996-01-27" disabled>
+						<label for="fnome"><strong>*Primeiro nome</strong></label>
+							<input type="text" placeholder="Digite o primeiro nome" name="fnome" id="fnome" required value="Fernando" disabled>
+						<label for="lnome"><strong>Último nome</strong></label>
+							<input type="text" placeholder="Digite o último nome" name="lnome" id="lnome" value="Shinohara" disabled>
+						<label for="email"><strong>*Email</strong></label>
+							<input type="email" placeholder="Digite o email" name="email" id="email" required value="fernandots1996@hotmail.com" disabled>
+						<label for="tel"><strong>Telefone</strong></label>
+							<input type="tel" id="tel" name="tel" placeholder="(xx)xxxxxxxxx" pattern="\([0-9]{2}\)[0-9]{9}" value="(42)999696400" disabled>
+					</fieldset><br>
+					<fieldset>
+						<legend>Endereço</legend>
+						<br>
+						<label for="rua"><strong>Rua</strong></label>
+							<input type="text" placeholder="Digite o nome da rua" name="rua" id="rua" value="Rua Teixeira Mendes" disabled>
+						<label for="numero"><strong>Numero</strong></label>
+							<input type="number" class="numero" name="numero" id="numero" min="0" value="2101" disabled>
+						<label for="comp"><strong>Complemento</strong></label>
+							<input type="text" name="comp" id="comp" placeholder="Digite o complemento (se necessário)" value="kit 06" disabled>
+						<label for="bairro"><strong>Bairro</strong></label>
+							<input type="text" placeholder="Digite o nome do bairro" name="bairro" id="bairro" value="Uvaranas" disabled>
+						<label for="cidade"><strong>Cidade</strong></label>
+							<input type="text" placeholder="Digite o nome da cidade" name="cidade" id="cidade" value="Ponta Grossa" disabled>
+						<br><label for="uf"><strong>UF</strong></label><br>
+							<select id="uf" name="uf" class="selects" disabled>
+								<option hidden>Selecionar ...</option>
+								<option>MG</option>
+								<option selected>PR</option>
+								<option>SP</option>
+								<option>Outro</option>
+							</select>
+					</fieldset><br>
+					<fieldset>
+						<legend>Acesso</legend>
+						<label for="usuario"><strong>*Usuário</strong></label>
+						<input type="text" placeholder="De 4 a 16 caracteres" name="usuario" id="usuario" min="4" max="16" required value="usuario1" disabled> 
+						<label for="psw"><strong>*Senha</strong></label>
+						<input type="password" placeholder="6 caracteres numericos" id="psw" name="psw" pattern="[0-9]{6}" required value="123456" disabled>
+					</fieldset>
+					<div class="buttons">
+						<button type="button" class="cancelbtn">Voltar</button>
+					</div>
+	  			</div>
+			</form>
+		</main>
+	</div>
+	<footer>
+		<p id="footerCopyrights">
+			&copy;Copyright 2018 <a target="_blank" href="../../index.html">BiBSystem</a>. All rights reserved.
+		</p>
+	</footer>
+</body>
+</html>
