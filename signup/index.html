@@ -21,9 +21,9 @@
 		<a href="../login" class="sign">Entrar</a>
 		<a href="../signup" class="sign">Cadastrar-se</a>
 	</nav>
-	<form method="post" action="" autocomplete="on" id="formulario" name="formulario">
+	<form method="post" action="#" autocomplete="on" id="formulario" name="formulario">
 	  <div class="container">
-			<h1>Registrar-se</h1>
+			<h1>Cadastrar-se</h1>
 			<p> Preencha os campos para criar uma conta.</p>
 			<hr>
 			<fieldset>
@@ -31,11 +31,13 @@
 				<br>
 				<label for="cpf"><strong>*CPF</strong></label>
 					<input type="text" placeholder="xxx.xxx.xxx-xx" pattern="[0-9]{3}\.[0-9]{3}\.[0-9]{3}\-[0-9]{2}" name="cpf" id="cpf" required>
-				<label for="gender"><strong>Gênero</strong></label>
-					<input type="radio" id="male" name="gender" value="Masculino">
+				<strong>Gênero</strong>
+					<input type="radio" id="male" name="male" value="Masculino">
 				<label for="male">Masculino</label>
-					<input type="radio" id="female" name="gender" value="Feminino">
+					<input type="radio" id="female" name="female" value="Feminino">
 				<label for="female">Feminino</label>
+				<input type="radio" id="unknown" name="unknown" value="Desconhecido" >
+				<label for="unknown">Prefiro não dizer</label>
 				<br><br>
 				<label for="datebirth"><strong>Data de nascimento</strong></label>
 					<input type="date" name="datebirth" id="datebirth">
@@ -64,11 +66,11 @@
 					<input type="text" placeholder="Digite o nome da cidade" name="cidade" id="cidade">
 				<label for="uf"><strong>UF</strong></label>
 					<select id="uf" name="uf" class="selects">
-						<option selected disabled hidden></option>
-						<option>MG</option>
-						<option>PR</option>
-						<option>SP</option>
-						<option>Outro</option>
+						<option selected disabled hidden>Selecionar ...</option>
+						<option value="MG">MG</option>
+						<option value="PR">PR</option>
+						<option value="SP">SP</option>
+						<option value="outro">Outro</option>
 					</select>
 			</fieldset>
 			<br>
@@ -77,9 +79,9 @@
 				<label for="usuario"><strong>*Usuário</strong></label>
 				<input type="text" placeholder="De 4 a 16 caracteres" name="usuario" id="usuario" min="4" max="16" required> 
 				<label for="psw"><strong>*Senha</strong></label>
-				<input type="password" placeholder="6 caracteres numericos" name="psw" pattern="[0-9]{6}" required>
+				<input type="password" placeholder="6 caracteres numericos" id="psw" name="psw" pattern="[0-9]{6}" required>
 				<label for="psw-repeat"><strong>*Repetir senha</strong></label>
-				<input type="password" placeholder="Digite a senha novamente" name="psw-repeat" required>
+				<input type="password" placeholder="Digite a senha novamente" id="psw-repeat" name="psw-repeat" required>
 		  </fieldset>
 			<p>(*) Campos obrigatórios</p>
 			<label>

@@ -6,6 +6,7 @@
 	<meta name="description" content="Fomulário de contato.">
 	<title>BiBSystem - Formulário de contato</title>
 	<link rel="icon" href="../favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" href="../css/contact.css">
 </head>
 <body>
@@ -21,27 +22,44 @@
 		<a href="../login" class="sign">Entrar</a>
 		<a href="../signup" class="sign">Cadastrar-se</a>
 	</nav>
-	<h1>Contate-nos</h1>
-   	<hr><br>
-    <form method="post" action="" id="contato" name="contato">
-        <label for="pnome">*Primeiro nome</label>
-        <input type="text" id="pnome" name="pnome" placeholder="Digite seu primeiro nome" required>
-        <label for="unome">Último nome</label>
-        <input type="text" id="unome" name="unome" placeholder="Digite seu segundo nome">
-        <label for="email">*Email</label>
-        <input type="email" id="email" name="email" placeholder="Digite seu email" required>
-        <label for="pais">País</label>
-        <select id="pais" name="pais">
-            <option selected hidden></option>
-            <option value="australia">Brasil</option>
-            <option value="canada">Argentina</option>
-            <option value="usa">Chile</option>
-        </select>
-        <label for="mensagem">*Mensagem</label>
-        <textarea id="mensagem" name="mensagem" placeholder="Digite alguma coisa..." style="height:200px" required></textarea>
-        <p>(*) Campos obrigatórios.</p>
-        <button id="submit" type="submit">Enviar</button>
-    </form>
+	<div class="container">
+		<aside>
+			<h2>Endereço</h2>
+			<address>
+				<a href="mailto:webmaster@bibsystem.com">E-Mail para o administrador do site.</a><br>
+				BIBSystem<br>
+				Av. Monteiro Lobato, s/n<br>
+				Jardim Carvalho<br>
+				Ponta Grossa - PR, 84016-210<br>
+				Brasil
+			</address>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14457.925904652264!2d-50.1321982!3d-25.0516652!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4e557007a1f159d8!2sUniversidade+Tecnol%C3%B3gica+Federal+do+Paran%C3%A1%2C+C%C3%A2mpus+Ponta+Grossa!5e0!3m2!1spt-BR!2sbr!4v1536959010363" width="300" height="200" frameborder="0" style="border:0" allowfullscreen></iframe>
+		</aside>
+		<main>
+			<h1>Contate-nos</h1>
+			<hr><br>
+			<form method="post" action="#" id="contato" name="contato">
+				<label for="pnome">*Primeiro nome</label>
+				<input type="text" id="pnome" name="pnome" placeholder="Digite seu primeiro nome" required>
+				<label for="unome">Último nome</label>
+				<input type="text" id="unome" name="unome" placeholder="Digite seu segundo nome">
+				<label for="email">*Email</label>
+				<input type="email" id="email" name="email" placeholder="Digite seu email" required>
+				<label for="pais">País</label>
+				<select id="pais" name="pais">
+					<option selected hidden>Selecionar ...</option>
+					<option value="brasil">Brasil</option>
+					<option value="argentina">Argentina</option>
+					<option value="chile">Chile</option>
+					<option value="outros">Outros</option>
+				</select>
+				<label for="mensagem">*Mensagem</label>
+				<textarea id="mensagem" name="mensagem" placeholder="Digite alguma coisa..." style="height:200px" required></textarea>
+				<p>(*) Campos obrigatórios.</p>
+				<button id="submit" type="submit">Enviar</button>
+			</form>
+		</main>
+	</div>
 	<footer>
 		<p id="footerCopyrights">
 			&copy;Copyright 2018 <a target="_blank" href="../index.html">BiBSystem</a>. All rights reserved.
