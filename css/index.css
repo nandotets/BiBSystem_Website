@@ -49,8 +49,8 @@ aside {
 	display: block;
     background-color: #f1f1f1;
     padding: 20px;
-	flex: 1px;
-	-ms-flex: 1px; /* IE10 */
+	flex: 10%;
+	-ms-flex: 10%; /* IE10 */
 }
 
 main {   
@@ -65,11 +65,17 @@ main {
 
 footer {
     background-color: #F1F1F1;
+	display:block;
     text-align: center;
-    padding: 10px;
+    padding: 20px;
 }
 
 body {
     border-radius: 5px;
     padding: 20px;
+}
+
+#map {
+	height: 30%;
+	width: 100%;
 }

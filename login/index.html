@@ -7,19 +7,20 @@
 	<title>BiBSystem - Formulário de login de cliente</title>
 	<link rel="icon" href="../favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../css/login.css">
+    <script type="text/javascript" src="../js/login.js"></script>
 </head>
 <body>
 	<header>
-		<img id="logo" src="../images/BiBSystemHeader.png" alt="BiBSystemHeader.png" >
+		<img id="logo" src="../images/BiBSystemHeader.png" alt="BiBSystemHeader.png" onMouseOver="bannerGifOn()" onMouseOut="bannerGifOff()">
 	</header>
 	<nav>
 		<a href="../index.html">Início</a>
-		<a href="../noticias">Notícias</a>
+		<a href="../noticias/index.html">Notícias</a>
 		<a href="../forum">Fórum</a>
-		<a href="../contact">Contato</a>
-		<a href="../sobre">Sobre</a>
-		<a href="../login" class="sign">Entrar</a>
-		<a href="../signup" class="sign">Cadastrar-se</a>
+		<a href="../contact/index.html">Contato</a>
+		<a href="../sobre/index.html">Sobre</a>
+		<a href="../login/index.html" class="sign">Entrar</a>
+		<a href="../signup/index.html" class="sign">Cadastrar-se</a>
 	</nav>
     <form method="post" action="#" id="login" name="login">
 		<h1>Entrar</h1>
@@ -34,7 +35,7 @@
         </label>
         <button type="submit">Entrar</button>
 	  <div class="container" style="background-color:#f1f1f1">
-		<button type="button" class="cancelbtn">Cancelar</button>
+		<button type="button" class="cancelbtn" onClick="cancelBtn()">Cancelar</button>
 		<span class="psw"><a href="#">Esqueceu sua senha?</a></span>
 	  </div>
 	</form>

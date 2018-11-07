@@ -2,25 +2,26 @@
 <html lang="pt-br">
 <head>
 	<meta charset="UTF-8">
-	<meta name="keywords" content="Formulario, Contato, HTML5">
+	<meta name="keywords" content="Formulario, Contato, HTML5, CSS, JS">
 	<meta name="description" content="Fomulário de contato.">
 	<title>BiBSystem - Formulário de contato</title>
 	<link rel="icon" href="../favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="../css/index.css">
 	<link rel="stylesheet" type="text/css" href="../css/contact.css">
+    <script type="text/javascript" src="../js/contact.js"></script>
 </head>
 <body>
 	<header>
-		<img id="logo" src="../images/BiBSystemHeader.png" alt="BiBSystemHeader.png" >
+		<img id="logo" src="images/BiBSystemHeader.png" alt="BiBSystemHeader" onMouseOver="bannerGifOn()" onMouseOut="bannerGifOff()">
 	</header>
 	<nav>
 		<a href="../index.html">Início</a>
-		<a href="../noticias">Notícias</a>
+		<a href="../noticias/index.html">Notícias</a>
 		<a href="../forum">Fórum</a>
-		<a href="../contact">Contato</a>
-		<a href="../sobre">Sobre</a>
-		<a href="../login" class="sign">Entrar</a>
-		<a href="../signup" class="sign">Cadastrar-se</a>
+		<a href="../contact/index.html">Contato</a>
+		<a href="../sobre/index.html">Sobre</a>
+		<a href="../login/index.html" class="sign">Entrar</a>
+		<a href="../signup/index.html" class="sign">Cadastrar-se</a>
 	</nav>
 	<div class="container">
 		<aside>
@@ -48,10 +49,11 @@
 				<label for="pais">País</label>
 				<select id="pais" name="pais">
 					<option selected hidden>Selecionar ...</option>
-					<option value="brasil">Brasil</option>
-					<option value="argentina">Argentina</option>
-					<option value="chile">Chile</option>
-					<option value="outros">Outros</option>
+					<option value="Brasil">Brasil</option>
+					<option value="Argentina">Argentina</option>
+					<option value="Chile">Chile</option>
+					<option value="EstadosUnidos">Estados Unidos</option>
+                    <option value="Outro">Outro</option>
 				</select>
 				<label for="mensagem">*Mensagem</label>
 				<textarea id="mensagem" name="mensagem" placeholder="Digite alguma coisa..." style="height:200px" required></textarea>

@@ -7,19 +7,20 @@
 	<title>BiBSystem</title>
 	<link rel="icon" href="favicon.ico" type="image/x-icon">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+    <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
 	<header>
-		<img id="logo" src="images/BiBSystemHeader.png" alt="BiBSystemHeader.png" >
+		<img id="logo" src="images/BiBSystemHeader.png" alt="BiBSystemHeader" onMouseOver="bannerGifOn()" onMouseOut="bannerGifOff()">
 	</header>
 	<nav>
 		<a href="index.html">Início</a>
-		<a href="noticias">Notícias</a>
+		<a href="noticias/index.html">Notícias</a>
 		<a href="forum">Fórum</a>
-		<a href="contact">Contato</a>
-		<a href="sobre">Sobre</a>
-		<a href="login" class="sign">Entrar</a>
-		<a href="signup" class="sign">Cadastrar-se</a>
+		<a href="contac/index.htmlt">Contato</a>
+		<a href="sobre/index.html">Sobre</a>
+		<a href="login/index.html" class="sign">Entrar</a>
+		<a href="signup/index.html" class="sign">Cadastrar-se</a>
 	</nav>
 	<div class="container">
 		<aside>
@@ -32,7 +33,11 @@
 			<p><a href="noticias">Mais versões.</a></p>
 
 			<iframe width="400" height="250" src="https://www.youtube.com/embed/2ZC3rM2Y8jQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-
+			
+           <h2> Sua localização </h2>
+           <div id="map"></div>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxKaFwdfI1s2EqUfhGCTryESnYKMkeDJo&callback=initMap">
+</script>
 		</aside>
 		<main>
 			<h1>BIBSystem</h1>
