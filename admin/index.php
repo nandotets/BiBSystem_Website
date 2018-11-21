@@ -1,3 +1,7 @@
+<?php 
+include('verify_login.php');
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -13,6 +17,7 @@
 	<aside>
 		<img id="logo" src="../images/BiBSystem.png" alt="BiBSystemHeader.png" >
 		<h2>DASHBOARD</h2>
+		<h2> Olá, <?php echo $_SESSION['uname']; ?>.</h2>
 		<nav>
 			<ul>
 				<li><h3>Notícias</h3>
@@ -25,9 +30,9 @@
 				</li>
 				<li><h3>Usuários</h3>
 					<ul>
-						<li><a href="usuarios/visualizar.html">Visualizar</a></li>
-						<li><a href="usuarios/editar.html">Editar</a></li>
-						<li><a href="usuarios/deletar.html">Deletar</a></li>
+						<li><a href="usuarios/visualizar.php">Visualizar</a></li>
+						<li><a href="usuarios/editar.php">Editar</a></li>
+						<li><a href="usuarios/deletar.php">Deletar</a></li>
 					</ul>
 				</li>
 				<li><h3>Sobre</h3>
@@ -35,7 +40,7 @@
 						<li><a href="sobre/editar.html">Editar</a></li>
 					</ul>
 				</li>
-				<li><h3><a href="../index.html">Sair</a></h3></li>
+				<li><h3><a href="logout.php">Sair</a></h3></li>
 			</ul>
 		</nav>
 		</aside>
@@ -46,7 +51,7 @@
 	</div>
 	<footer>
 		<p id="footerCopyrights">
-			&copy;Copyright 2018 <a target="_blank" href="../index.html">BiBSystem</a>. All rights reserved.
+			&copy;Copyright 2018 <a target="_blank" href="../index.php">BiBSystem</a>. All rights reserved.
 		</p>
 	</footer>
 </body>

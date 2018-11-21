@@ -7,6 +7,22 @@ header {
     padding: 10px;
 }
 
+.buttonColors {
+	text-align: right;
+}
+
+#colorBlack {
+	background-color: black;
+}
+
+#colorBlue {
+	background-color: blue;
+}
+
+#colorGray {
+	background-color: gray;
+}
+
 #logo {
 	max-width: 800px;
 	max-height: 200px;
@@ -73,9 +89,4 @@ footer {
 body {
     border-radius: 5px;
     padding: 20px;
-}
-
-#map {
-	height: 30%;
-	width: 100%;
 }

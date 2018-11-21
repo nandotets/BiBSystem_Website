@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-	<meta charset="UTF-8">
+<meta charset="UTF-8">
 	<meta name="keywords" content="Biblioteca, Sistema, HTML5">
 	<meta name="description" content="BiBSystem é um sistema implementado em JAVA destinado ao controle de acervo e empréstimos de uma biblioteca. Possui como prioridade uma boa aparência e facilitar a navegação do usuário.">
 	<title>BiBSystem</title>
@@ -10,18 +10,22 @@
     <script type="text/javascript" src="js/index.js"></script>
 </head>
 <body>
-	<header>
-		<img id="logo" src="images/BiBSystemHeader.png" alt="BiBSystemHeader" onMouseOver="bannerGifOn()" onMouseOut="bannerGifOff()">
+	<header> <img id="logo" src="images/BiBSystemHeader.png" alt="BiBSystemHeader" onMouseOver="bannerGifOn()" onMouseOut="bannerGifOff()">
+		<div class="buttonColors">
+			<button id="colorBlack"></button>
+			<button id="colorGray"></button>
+			<button id="colorBlue"></button>
+		</div>
 	</header>
-	<nav>
-		<a href="index.html">Início</a>
-		<a href="noticias/index.html">Notícias</a>
-		<a href="forum">Fórum</a>
-		<a href="contac/index.htmlt">Contato</a>
-		<a href="sobre/index.html">Sobre</a>
-		<a href="login/index.html" class="sign">Entrar</a>
-		<a href="signup/index.html" class="sign">Cadastrar-se</a>
-	</nav>
+<nav>
+	<a href="index.php">Início</a>
+	<a href="noticias/index.html">Notícias</a>
+	<a href="forum">Fórum</a>
+	<a href="contac/index.htmlt">Contato</a>
+	<a href="sobre/index.html">Sobre</a>
+	<a href="login/index.php" class="sign">Entrar</a>
+	<a href="signup/index.php" class="sign">Cadastrar-se</a>
+  </nav>
 	<div class="container">
 		<aside>
 			<h2>Notícias</h2>
@@ -33,11 +37,6 @@
 			<p><a href="noticias">Mais versões.</a></p>
 
 			<iframe width="400" height="250" src="https://www.youtube.com/embed/2ZC3rM2Y8jQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-			
-           <h2> Sua localização </h2>
-           <div id="map"></div>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDxKaFwdfI1s2EqUfhGCTryESnYKMkeDJo&callback=initMap">
-</script>
 		</aside>
 		<main>
 			<h1>BIBSystem</h1>
@@ -54,7 +53,7 @@
 	</div>
 	<footer>
 		<p id="footerCopyrights">
-			&copy;Copyright 2018 <a target="_blank" href="index.html">BiBSystem</a>. All rights reserved.
+			&copy;Copyright 2018 <a target="_blank" href="index.php">BiBSystem</a>. All rights reserved.
 		</p>
 	</footer>
 </body>

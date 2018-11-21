@@ -74,6 +74,13 @@ function checkPass(){ //Verificação de repetição de senha correta
 		return false;
 }
 
+function checkPassLenght(){ //Senha nao possui 6 caracteres
+	if(document.getElementById("psw").value.length != 6){
+		return false;
+	}
+	return true;
+}
+
 function check_inputs(){
 	var input_cpf = document.getElementById("cpf");
 	var input_usuario = document.getElementById("usuario");
@@ -93,12 +100,17 @@ function check_inputs(){
 		document.getElementById("usuario").focus();
 		return false;
 	}
+	if(!checkPassLenght()){
+		alert("A senha nao possui 6 caracteres!");
+		return false;
+	}
+	alert("Cadastro efetuado com sucesso.");
 	submit();
 }
 
 function cancelBtn(){
 	if(confirm("Deseja realmente cancelar o cadastro? Você será redirecionado à página inicial.")){ //Se confirmar cancelar o cadastro
-		window.location.assign("../index.html");
+		window.location.assign("../index.php");
 	}
 }
 

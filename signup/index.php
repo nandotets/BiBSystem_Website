@@ -1,3 +1,28 @@
+<?php include_once('../Connections/bibsysdb.php'); ?>
+<?php
+	if(isset($_POST['submit'])){
+		$cpf = $_POST['cpf'];
+		$gender = $_POST['gender'];
+		$birth = $_POST['birth'];
+		$fname = $_POST['fnome'];
+		$lname = $_POST['lnome'];
+		$email = $_POST['email'];
+		$tel = $_POST['tel'];
+		$cel = $_POST['cel'];
+		$cep = $_POST['cep'];
+		$lograd = $_POST['logradouro'];
+		$num = $_POST['numero'];
+		$comp = $_POST['comp'];
+		$district = $_POST['bairro'];
+		$city = $_POST['cidade'];
+		$uf = $_POST['uf'];
+		$user = $_POST['usuario'];
+		$psw = $_POST['psw'];
+		
+		$sql = "insert into users (cpf, gender, birth, fname, lname, email, tel, cel, cep, lograd, num, compl, district, city, uf, user, password) values ('$cpf', '$gender', '$birth', '$fname', '$lname', '$email', '$tel', '$cel', '$cep', '$lograd', '$num', '$comp', '$district', '$city', '$uf', '$user', '$psw')";
+		$result_mysqli = mysqli_query($bibsysdb, $sql) or die(mysqli_error($bibsysdb));
+	}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -15,13 +40,13 @@
 		<img id="logo" src="../images/BiBSystemHeader.png" alt="BiBSystemHeader.png" onMouseOver="bannerGifOn()" onMouseOut="bannerGifOff()">
 	</header>
 	<nav>
-		<a href="../index.html">Início</a>
+		<a href="../index.php">Início</a>
 		<a href="../noticias/index.html">Notícias</a>
 		<a href="../forum">Fórum</a>
 		<a href="../contact/index.html">Contato</a>
 		<a href="../sobre/index.html">Sobre</a>
-		<a href="../login/index.html" class="sign">Entrar</a>
-		<a href="../signup/index.html" class="sign">Cadastrar-se</a>
+		<a href="../login/index.php" class="sign">Entrar</a>
+		<a href="index.php" class="sign">Cadastrar-se</a>
 	</nav>
       
 	<form method="post" action="" autocomplete="on" id="formulario" name="formulario" onSubmit="check_inputs(); return false;">
@@ -36,6 +61,7 @@
 				<label for="cpf"><strong>*CPF (digite somente números)</strong></label>
 					<input type="text" name="cpf" id="cpf" onkeypress="mascara(this,cpfmask)" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" maxlength="14" title="Digite o CPF no formato: NNN.NNN.NNN-NN" required>
 				<strong>Gênero</strong>
+					<input type="hidden" id="gender" name="gender" value="N">
 					<input type="radio" id="gender" name="gender" value="M">
 				<label>Masculino</label>
 					<input type="radio" id="gender" name="gender" value="F">
@@ -44,7 +70,7 @@
 				<label>Prefiro não dizer</label>
 				<br><br>
 				<label for="datebirth"><strong>Data de nascimento</strong></label>
-					<input type="date" name="datebirth" id="datebirth">
+					<input type="date" name="birth" id="birth">
 				<label for="fnome"><strong>*Primeiro nome</strong></label>
 					<input type="text" placeholder="Digite o primeiro nome" name="fnome" id="fnome" required>
 				<label for="lnome"><strong>Último nome</strong></label>
@@ -74,7 +100,7 @@
 					<input type="text" name="cidade" id="cidade" >
 				<label for="uf"><strong>UF (Estado)</strong></label>
 					<select id="uf" name="uf" class="selects">
-            <option disabled selected> </option>
+            <option value="--" selected>--</option>
 			<option value="AC">Acre</option>
 			<option value="AL">Alagoas</option>
 			<option value="AP">Amapá</option>
@@ -148,13 +174,14 @@
 			</label>
 			<div class="clearfix">
 				<button type="button" onClick="cancelBtn()" class="cancelbtn">Cancelar</button>
-				<button type="submit" class="signupbtn">Registrar-se</button>
+				<button name="submit" type="submit" class="signupbtn">Registrar-se</button>
 			</div>
 	  </div>
+	  <input type="hidden" name="MM_insert" value="formulario">
 	</form>
 	<footer>
 		<p id="footerCopyrights">
-			&copy;Copyright 2018 <a target="_blank" href="../index.html">BiBSystem</a>. All rights reserved.
+			&copy;Copyright 2018 <a target="_blank" href="../index.php">BiBSystem</a>. All rights reserved.
 		</p>
 	</footer>
 </body>

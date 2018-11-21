@@ -59,6 +59,14 @@ header {
     padding: 10px;
 }
 
+.no_auth {
+	display: inline-block;
+	background-color: #FF7577;
+	text-decoration-color: white;
+	
+	
+}
+
 #logo {
 	max-width: 800px;
 	max-height: 200px;
